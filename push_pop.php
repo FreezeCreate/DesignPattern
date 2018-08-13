@@ -44,4 +44,27 @@ function BubbleSort($arr){
     return $arr;
 }
 
-print_r(BubbleSort([5,8,3,9,7]));
+//print_r(BubbleSort([5,8,3,9,7]));
+
+//快速排序
+function QSort($arr){
+    $length = count($arr);
+    if($length <=1){
+        return $arr;
+    }
+    $pivot = $arr[0];//枢轴
+    $left_arr = array();
+    $right_arr = array();
+    for($i=1;$i<$length;$i++){//注意$i从1开始0是枢轴
+        if($arr[$i]<=$pivot){
+            $left_arr[] = $arr[$i];
+        }else{
+            $right_arr[] = $arr[$i];
+        }
+    }
+    $left_arr = QSort($left_arr);//递归排序左半部分
+    $right_arr = QSort($right_arr);//递归排序右半部份
+    return array_merge($left_arr,array($pivot),$right_arr);//合并左半部分、枢轴、右半部分
+}
+
+print_r(QSort([8,5,3,9,7]));
