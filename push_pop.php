@@ -67,4 +67,19 @@ function QSort($arr){
     return array_merge($left_arr,array($pivot),$right_arr);//合并左半部分、枢轴、右半部分
 }
 
-print_r(QSort([8,5,3,9,7]));
+//print_r(QSort([8,5,3,9,7]));
+
+//empty,答案不为空
+//$float = 0.35;
+//if (empty($float)){
+//    echo '空';
+//}else{
+//    echo '不为空';
+//}
+
+//变量
+//$str1 = 'asd';
+//$str2 = $str1;
+//echo 'str2为：'.$str2.'<br />';
+//unset($str1);
+//echo 'str2后来为：'.$str2;
