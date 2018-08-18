@@ -70,12 +70,12 @@ function QSort($arr){
 //print_r(QSort([8,5,3,9,7]));
 
 //empty,答案不为空
-//$float = 0.35;
-//if (empty($float)){
-//    echo '空';
-//}else{
-//    echo '不为空';
-//}
+$float = 0.35;
+if (empty($float)){
+    echo '空';
+}else{
+    echo '不为空';
+}
 
 //变量
 //$str1 = 'asd';
