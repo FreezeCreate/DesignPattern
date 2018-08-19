@@ -88,3 +88,5 @@ $utf = '你好a';
 echo strlen($utf);
 //var_dump(str_split($utf));
 echo mb_substr($utf, 0 ,2);
+
+//在mysql中ALTER TABLE `article` ADD INDEX(`tag`);建立索引，使用explain select tag from article来确定索引是否命中
