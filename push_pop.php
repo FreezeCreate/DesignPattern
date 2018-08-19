@@ -83,3 +83,8 @@ if (empty($float)){
 //echo 'str2为：'.$str2.'<br />';
 //unset($str1);
 //echo 'str2后来为：'.$str2;
+
+$utf = '你好a';
+echo strlen($utf);
+//var_dump(str_split($utf));
+echo mb_substr($utf, 0 ,2);
